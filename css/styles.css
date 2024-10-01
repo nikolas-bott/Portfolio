@@ -9,6 +9,12 @@
     font-variation-settings:
       "wdth" 100;
   }
+  html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative
+  }
   
 .inter-heading-font {
     font-family: "Inter", sans-serif;
