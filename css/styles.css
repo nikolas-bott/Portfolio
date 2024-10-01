@@ -306,9 +306,21 @@ html::-webkit-scrollbar-thumb{
 .background-blur-iamge-container{
     position: absolute;
     width: 100%;
+    height: 1300px;
+    height: 100%;
+    z-index: -10;
+    display: flex;
+    align-items: center;
+    
 }
 .background-blur-iamge-container img{
     width: 100%;
+}
+@media(max-width: 1200px){
+    .background-blur-iamge-container img{
+        padding-top: 500px;
+    height: 1300px;
+    }
 }
 
 .main-timeline{
@@ -338,8 +350,106 @@ html::-webkit-scrollbar-thumb{
     flex-direction: column;
 }
 .timeline-content h2{
-    font-size: 50px;
+    font-size: 75px;
 }
 .timeline-content p{
     font-size: 30px;
+}
+
+.timeline-jan img{
+    padding-top: 10%;
+    padding-bottom: 20%;
+    width: 50%;
+}
+.timeline-mar img,.timeline-sep img{
+    padding-top: 10%;
+    padding-bottom: 20%;
+    width: 30%;
+}
+
+@media(max-width: 1350px){
+    .timeline-container h1{
+        font-size: 80px;
+    }
+    .instruction-container{
+        padding-bottom: 200px;
+    }
+    .timeline-content h2{
+        font-size: 65px;
+    }
+}
+@media(max-width: 1050px){
+    .timeline-container h1{
+        font-size: 60px;
+    }
+    .instruction-container{
+        padding-bottom: 35px;
+    }
+}
+@media(max-width: 750px){
+    .timeline-container h1{
+        font-size: 50px;
+    }
+    .instruction-container{
+        padding-bottom: 25px;
+    }
+    .timeline-content h2{
+        font-size: 50px;
+    }
+}
+@media(max-width: 500px){
+    .timeline-container h1{
+        font-size: 35px;
+    }
+    .instruction-container{
+        padding-bottom: 15px;
+    }
+    .timeline-content h2{
+        font-size: 50px;
+    }
+}
+.timeline-example{
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.timeline-example img{
+    width: 40%;
+    padding-bottom: 5%;
+}
+.html-example, .java-example, .js-example{
+    display: flex;
+}
+.html-example, .js-example{
+    justify-content: end;
+}
+.java-example{
+    justify-content: space-around;
+}
+@media(max-width: 1200px){
+    .timeline-example img{
+        width: 60%;
+        padding-bottom: 20%;
+    }
+}
+@media(max-width: 1000px){
+    .timeline-example img{
+        width: 60%;
+        padding-bottom: 20%;
+    }
+}
+@media(max-width: 850px){
+    .timeline-example img{
+        width: 75%;
+        padding-bottom: 45%;
+    }
+}
+@media(max-width: 685px){
+    .timeline-example img{
+        width: 0;
+    }
+    .timeline-content{
+        width: 80%;
+    }
 }
